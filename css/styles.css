@@ -18,9 +18,7 @@ section {
   padding: 20px 2%;
 }
 
-select:invalid {
-  color: gray;
-}
+
 
 /* ================================
     Base Layout Styles
