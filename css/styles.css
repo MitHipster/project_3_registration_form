@@ -34,9 +34,11 @@ select:invalid {
 
 
 
-/* ------- Page Elements ------- */
+/* ------- Form Elements ------- */
 
-
+#other-topics {
+  resize: none;
+}
 
 /* ================================
     Media Queries
