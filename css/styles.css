@@ -58,9 +58,9 @@ fieldset {
 
 legend {
   font-family: 'Martel', serif;
-  font-size: 1.3rem;
+  font-size: 1.35rem;
   font-weight: 800;
-  padding: 15px 0 10px;
+  padding: 25px 0 20px;
 }
 
 label,
@@ -81,7 +81,7 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: transparent url("../img/icon-arrow-down.svg") no-repeat 98% center;
+  background: transparent url("../img/icon-arrow-down.svg") no-repeat 96% center;
   background-size: 24px;
 }
 
@@ -105,6 +105,16 @@ input:focus {
   text-align: left;
 }
 
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+input[type="checkbox"]:last-of-type,
+input[type="radio"]:last-of-type {
+  margin-bottom: 40px;
+}
+
 section:last-of-type {
   font-style: italic;
 }
@@ -124,6 +134,11 @@ section:last-of-type {
 
 
 /* ------- Form Elements ------- */
+
+.label-header {
+  display: inline-block;
+  margin-bottom: 15px;
+}
 
 #other-topics {
   resize: none;
