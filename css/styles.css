@@ -3,19 +3,110 @@
    ================================ */
 * {
   box-sizing: border-box;
+/*  border: 1px solid red;*/
 }
 
 body {
+  background-color: #f5f5f5;
   color: #2b2b2b;
   font-size: 1rem;
   font-family: 'Lato', sans-serif;
-/*  font-family: 'Martel', serif;*/
   line-height: 1.4;
+}
+
+header {
+  background-color: #192f41;
+  color: #f5f5f5;
+  padding: 25px 0;
+  box-shadow: 0 2px 10px 0 #060b10; 
+}
+
+header,
+section {
+  font-family: 'Martel', serif;
+  text-align: center;
+}
+
+h1, h5 {
+  margin: 0;
+}
+
+p {
+  color: #696969;
 }
 
 form,
 section {
-  padding: 20px 2%;
+  padding: 20px 3%;
+}
+
+form {
+  background-color: #f5f5f5;
+  margin: 0 5%;
+  border-radius: 6px;
+  box-shadow: 0 0 20px rgba(25, 47, 65, 0.5);
+}
+
+hr {
+  border-color: #192f41;
+  border-width: 4px;
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  font-family: 'Martel', serif;
+  font-size: 1.3rem;
+  font-weight: 800;
+  padding: 15px 0 10px;
+}
+
+label,
+input,
+select,
+textarea {
+  font-size: 1.2rem;
+  color: #696969;
+}
+
+input:not([type="checkbox"]):not([type="radio"]):not([name="zip"]),
+select,
+textarea {
+  width: 100%;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent url("../img/icon-arrow-down.svg") no-repeat 98% center;
+  background-size: 24px;
+}
+
+input,
+select,
+textarea {
+  border: none;
+  border-radius: 6px;
+  outline-color: #192f41;
+  padding: 12px 30px;
+  background-color: rgba(222, 222, 222, 0.5);
+  margin: 12px 0 20px;
+}
+
+input:placeholder-shown {
+  text-align: right;
+  font-style: italic;
+}
+
+input:focus {
+  text-align: left;
+}
+
+section:last-of-type {
+  font-style: italic;
 }
 
 

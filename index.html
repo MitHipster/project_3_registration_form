@@ -5,7 +5,7 @@
     <title>The Code Review - signup for our newsletter</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i|Martel:400,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Martel:400,800" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/styles.css">
 
@@ -21,15 +21,16 @@
     </section>
 
     <form id="signup-form">
+      <hr>
       <fieldset>
         
         <legend>Contact Information</legend>
         
         <label for="fullname">Full Name</label>
-        <input type="text" id="fullname" name="fullname" required>
+        <input type="text" id="fullname" name="fullname" placeholder="required  " required>
         
         <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email" name="email" placeholder="required  " required>
         
         <label for="tel">Phone Number</label>
         <input type="tel" id="tel" name="tel">
@@ -96,28 +97,28 @@
           <option value="WY">Wyoming</option>
         </select>
         
-        <label for="zip">Zip Code</label>
+        <label for="zip">Zip Code</label><br class="break">
         <input type="text" id="zip" name="zip">
         
       </fieldset>
-      
+      <hr>
       <fieldset>
         
         <legend>Newsletter</legend>
         
-        <label>Select the newletters you would like to receive</label>
+        <label>Select the newletters you would like to receive</label><br>
         <input type="checkbox" id="html-news" name="news" value="html">
-        <label for="html-news">HTML News</label>
+        <label for="html-news">HTML News</label><br>
         <input type="checkbox" id="css-news" name="news" value="css">
-        <label for="css-news">CSS News</label>
+        <label for="css-news">CSS News</label><br>
         <input type="checkbox" id="js-news" name="news" value="js">
-        <label for="js-news">JavaScript News</label>
+        <label for="js-news">JavaScript News</label><br>
         
-        <label>Newletter format</label>
+        <label>Newletter format</label><br>
         <input type="radio" id="html-format" name="format" value="html">
-        <label for="html-format">HTML</label>
+        <label for="html-format">HTML</label><br>
         <input type="radio" id="plain-format" name="format" value="plain">
-        <label for="plain-format">Plain text</label>
+        <label for="plain-format">Plain text</label><br>
         
         <label for="other-topics">Other topics you'd like to hear about</label>
         <textarea id="other-topics" name="other-topics" rows="5" cols="30" maxlength="200"></textarea>
@@ -127,7 +128,7 @@
       </fieldset>
       
       <button type="submit" id="signup-btn" form="signup-form" formaction="#">Sign Up</button>
-      
+      <hr>
     </form>
     
     <section>
