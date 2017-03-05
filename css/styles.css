@@ -93,10 +93,13 @@ textarea {
   width: 100%;
 }
 
+input[name="zip"] {
+  width: 180px;
+}
+
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none;
   background: transparent url("../img/icon-arrow-down.svg") no-repeat 96% center;
   background-size: 24px;
 }
@@ -112,7 +115,7 @@ textarea {
   margin: 12px 0 20px;
 }
 
-input:placeholder-shown {
+input[placeholder="required "] {
   text-align: right;
   font-style: italic;
 }
@@ -159,6 +162,7 @@ button {
   border-top: 5px solid #41c1b7;
   border-radius: 6px;
   outline: none;
+  -webkit-transition: all .3s;
   transition: all .3s;
 }
 
@@ -167,6 +171,7 @@ button:hover {
 }
 
 button:active {
+  -webkit-transform: scale(0.95);
   transform: scale(0.95);
   opacity: 1;
 }
@@ -179,27 +184,31 @@ button:active {
 
 @media only screen and (min-width: 768px) {
   
+  legend {
+    padding: 40px 0 20px;
+  }
   
+  #contact-info label {
+    display: inline-block;
+    width: 27%;
+  }
+  
+  input:not([type="checkbox"]):not([type="radio"]):not([name="zip"]),
+  select {
+    width: 72%;
+  }
+  
+  .break {
+    display: none;
+  }
 }
-
-
-
-/* ================================
-    Helper Classes
-   ================================ */
-
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-.clearfix {
-    *zoom: 1;
+  
+@media only screen and (min-width: 890px) {
+  
+  form {
+    max-width: 800px;
+    margin: 0 auto;
+  }
 }
 
 
