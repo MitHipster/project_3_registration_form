@@ -52,9 +52,25 @@ hr {
   border-width: 4px;
 }
 
+section:last-of-type {
+  font-style: italic;
+}
+
+
+
+/* ================================
+    Base Layout Styles
+   ================================ */
+
+/* ----- Layout Containers ----- */
+
 fieldset {
   border: none;
 }
+
+
+
+/* ------- Form Elements ------- */
 
 legend {
   font-family: 'Martel', serif;
@@ -115,9 +131,19 @@ input[type="radio"]:last-of-type {
   margin-bottom: 40px;
 }
 
-section:last-of-type {
-  font-style: italic;
+.label-header {
+  display: inline-block;
+  margin-bottom: 15px;
 }
+
+#other-topics {
+  resize: none;
+  margin-bottom: 0px;
+}
+
+
+
+/* ------- Button Element ------ */
 
 button {
   display: block;
@@ -145,29 +171,7 @@ button:active {
   opacity: 1;
 }
 
-/* ================================
-    Base Layout Styles
-   ================================ */
 
-/* --------- Navigation -------- */
-
-
-
-/* ----- Layout Containers ----- */
-
-
-
-/* ------- Form Elements ------- */
-
-.label-header {
-  display: inline-block;
-  margin-bottom: 15px;
-}
-
-#other-topics {
-  resize: none;
-  margin-bottom: 0px;
-}
 
 /* ================================
     Media Queries
@@ -196,15 +200,6 @@ button:active {
 
 .clearfix {
     *zoom: 1;
-}
-
-/* ================================
-    Print Styles
-   ================================ */
-
-@media print {
-
-    
 }
 
 
