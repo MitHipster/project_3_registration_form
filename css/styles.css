@@ -100,7 +100,8 @@ input[name="zip"] {
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
-  background: transparent url("../img/icon-arrow-down.svg") no-repeat 96% center;
+  -ms-appearance: none;
+  background: transparent url("../img/icon-arrow-down.svg") no-repeat 97% center;
   background-size: 24px;
 }
 
@@ -110,14 +111,9 @@ textarea {
   border: none;
   border-radius: 6px;
   outline: none;
-  padding: 12px 30px;
+  padding: 12px 20px;
   background-color: rgba(222, 222, 222, 0.5);
   margin: 12px 0 20px;
-}
-
-input[placeholder="required "] {
-  text-align: right;
-  font-style: italic;
 }
 
 input:focus,
