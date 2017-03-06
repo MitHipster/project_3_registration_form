@@ -33,7 +33,7 @@
         <input type="email" id="email" name="email" placeholder="Required" required>
         
         <label for="tel">Phone Number</label>
-        <input type="tel" id="tel" name="tel" pattern="^\d{3}-\d{3}-\d{4}$" title="Format: 555-555-5555" placeholder="555-555-5555">
+        <input type="tel" id="tel" name="tel" pattern="^\d{3}-\d{3}-\d{4}$" title="Ex: 555-555-5555" placeholder="555-555-5555">
         
         <label for="address">Street Address</label>
         <input type="text" id="address" name="address">
@@ -98,7 +98,7 @@
         </select>
         
         <label for="zip">Zip Code</label><br class="break">
-        <input type="text" id="zip" name="zip" placeholder="00000">
+        <input type="text" id="zip" name="zip" pattern="^\d{5}$" title="Ex: 00000" placeholder="00000">
         
       </fieldset>
       <hr>
@@ -125,7 +125,7 @@
         </div>
         
         <label for="other-topics">Other topics you'd like to hear about</label>
-        <textarea id="other-topics" name="other-topics" rows="5" maxlength="200" placeholder="Please let us know about your other interests."></textarea>
+        <textarea id="other-topics" name="other-topics" rows="5" maxlength="200" placeholder="Please tell us about your other interests."></textarea>
         
         <h5>Max 200 characters</h5>
         

@@ -94,14 +94,14 @@ textarea {
 }
 
 input[name="zip"] {
-  width: 180px;
+  width: 100px;
 }
 
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
-  background: transparent url("../img/icon-arrow-down.svg") no-repeat 97% center;
+  background: transparent url("../img/icon-arrow-down.svg") no-repeat 96% center;
   background-size: 24px;
 }
 
